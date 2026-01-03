@@ -1,16 +1,18 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 import express from "express";
 import cors from "cors";
-import dotenv from "dotenv";
 import router from "./router";
 
-dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// CORS
-if (process.env.CLIENT_URL) {
-  app.use(cors({ origin: [process.env.CLIENT_URL] }));
-}
+// CORS: works locally and on Vercel
+const clientUrl = process.env.CLIENT_URL || "http://localhost:5173";
+app.use(cors({ origin: clientUrl }));
+
+console.log("CLIENT_URL =", clientUrl);
 
 // JSON body parser
 app.use(express.json());
@@ -18,8 +20,8 @@ app.use(express.json());
 // Routes
 app.use("/api", router);
 
-// Test route (optional)
+// Test route
 app.get("/", (req, res) => res.send("API is working"));
 
-// Start server locally
+// Start server
 app.listen(PORT, () => console.log(`API running on http://localhost:${PORT}`));
