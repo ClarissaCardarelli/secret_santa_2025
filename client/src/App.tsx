@@ -1,14 +1,16 @@
 import "./css/reset.css";
 import "./css/variables.css";
 import "./css/global.css";
-import Home from "./pages/Home/Home";
 import Nav from "./components/Nav/Nav";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
       <Nav />
-      <Home />
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 }
