@@ -1,0 +1,52 @@
+.keyboard{
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+  /* border: 2px solid red; */
+}
+
+.letter-key{
+  aspect-ratio: 1 / 1;
+  width: 4rem;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: white;
+  color: black;
+  font-size: var(--word-font-size);
+  font-weight: var(--word-font-weight);
+  transition: background-color 0.2s ease;
+}
+
+.correct{
+  background-color: var(--dark-green);
+  color: white;
+  cursor: not-allowed;
+}
+
+.incorrect{
+  background-color: #cccccc;
+  color: #919191;
+  cursor: not-allowed;
+}
+
+.letter-key:hover:not(:disabled), 
+.letter-key:focus:not(:disabled){
+  cursor: pointer;
+  background-color: var(--red);
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px){
+  .keyboard{
+    gap: 0.3rem;
+
+  }
+  .letter-key{
+    width: 3rem;
+  }
+
+}

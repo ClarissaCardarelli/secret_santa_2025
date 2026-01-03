@@ -1,0 +1,28 @@
+.button{
+    background-color: var(--red);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-family: var(--button-font-family);
+    font-size: var(--button-font-size);
+    padding: 0.1em 0.3em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover{
+    background-color: var(--dark-green);
+}
+
+.general-text{
+    color: var(--dark-green);
+    font-family: var(--text-font-family);
+    font-size: var(--text-font-size);
+    font-weight: var(--text-font-weight);
+    text-align: center;
+}
+
+.round-info{
+    font-size: var(--info-font-size);
+    font-weight: var(--info-font-weight);
+}

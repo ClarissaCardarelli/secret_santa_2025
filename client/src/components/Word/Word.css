@@ -1,0 +1,27 @@
+.word-container{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+    font-size: var(--word-font-size);
+    font-weight: var(--word-font-weight);
+    /* border: 2px solid red; */
+}
+
+.underline{
+    border-bottom: 0.2em solid var(--dark-green);
+    width: 2.2ch;      
+    min-width: 1ch;    
+    max-width: 2.2ch;  
+    display: flex;
+    justify-content: center;
+}
+
+.visible{
+    visibility: visible;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
