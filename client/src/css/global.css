@@ -22,7 +22,9 @@
     text-align: center;
 }
 
-.round-info{
+.extra-info{
+    color: var(--dark-green);
+    font-family: var(--text-font-family);
     font-size: var(--info-font-size);
     font-weight: var(--info-font-weight);
 }

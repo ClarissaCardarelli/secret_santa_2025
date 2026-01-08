@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Roboto:wght@100..900&display=swap');
 
 :root{
     --dark-green: #003e1f;
     --red:#d90429;
 
-    --text-font-family: sans-serif;
+    --text-font-family: "Roboto", sans-serif;
     --text-font-size: 2.5rem;   
     --text-font-weight: 600;
 

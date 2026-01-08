@@ -1,0 +1,45 @@
+.nav{
+    height: 80px;
+    background-color: white;
+    width: 100%;
+}
+
+.nav ul{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul li a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-link{
+    color: var(--dark-green);
+    font-family: var(--text-font-family);
+    font-size: var(--info-font-size);
+    font-weight: 400;
+    text-decoration: none;   
+    transition: color 0.2s ease;
+}
+
+.title{    
+    font-weight: var(--info-font-weight);
+}
+
+
+.nav-link:hover{
+    color: var(--red);
+}
+
+.holly{
+    max-height: 100%;
+    width: auto;
+    padding: 5px;
+}

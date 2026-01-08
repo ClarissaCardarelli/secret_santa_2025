@@ -1,15 +1,21 @@
 import { Link } from "react-router-dom";
+import "./Nav.css";
 
 function Nav() {
   return (
     <>
-      <nav style={{ height: "80px", backgroundColor: "white", width: "100%" }}>
+      <nav className="nav">
         <ul>
           <li>
-            <Link to="/">Mot Mystère</Link>
+            <Link to="/" className="nav-link title">
+              <img src="/holly.png" alt="" className="holly" />
+              Mot Mystère
+            </Link>
           </li>
           <li>
-            <Link to="/scores">Scoreboard Link</Link>
+            <Link to="/scores" className="nav-link">
+              Classement
+            </Link>
           </li>
         </ul>
       </nav>
