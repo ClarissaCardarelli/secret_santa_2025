@@ -19,7 +19,7 @@ function Scoreboard() {
           {players ? (
             players.map((player) => (
               <li key={player.id}>
-                <strong>{player.name}</strong> — {player.score}
+                <strong>{player.username}</strong> — {player.score}
               </li>
             ))
           ) : (
