@@ -1,46 +1,14 @@
-# --------------------------
-# Root node_modules
-# --------------------------
+# Node modules
 node_modules/
-
-# --------------------------
-# Client (React/Vite)
-# --------------------------
+server/node_modules/
 client/node_modules/
-client/dist/
-client/dist-ssr/
+
+# Env files
+server/.env
 client/.env
-client/.env.*          # any other env files
 
-# --------------------------
-# API (serverless / backend)
-# --------------------------
-api/node_modules/
-api/dist/
-api/.env
-api/.env.*             # any other env files
-
-# --------------------------
 # Logs
-# --------------------------
 *.log
-logs
 
-# --------------------------
-# Editor files
-# --------------------------
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# --------------------------
 # Optional OS files
-# --------------------------
-Thumbs.db
-ehthumbs.db
+.DS_Store
