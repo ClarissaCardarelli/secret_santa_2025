@@ -7,9 +7,11 @@ const players = [
   { id: 3, name: "Claire", score: 15 },
 ];
 
-router.get("/hello", (req, res) => {
-  res.json({ message: "Hello from API!" });
-});
+// app.get("/", (req, res) => res.send("API is working"));
+
+// router.get("/hello", (req, res) => {
+//   res.json({ message: "Hello from API!" });
+// });
 
 
 router.get("/scores", (req, res) => {
