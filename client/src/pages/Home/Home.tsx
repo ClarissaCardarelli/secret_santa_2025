@@ -97,7 +97,7 @@ function Home() {
   const startNewGame = () => {
     stopStopWatch();
     setElapsedTime(0);
-    setRound(19);
+    setRound(20);
     setUsedWords([]);
     setGuessedLetters([]);
     setTotalWrongGuesses([]);

@@ -45,10 +45,18 @@
     border: 2px solid;
 }
 
+.modal-button{
+    width: 70%;
+}
+
 @media (max-width: 480px) {
 
 .modal-content{
     padding: 2rem 1rem;
+}
+
+.modal-button{
+    width: 100%;
 }
 
 }
