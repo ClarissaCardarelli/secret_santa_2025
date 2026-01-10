@@ -9,6 +9,7 @@ const router = express.Router();
 //   res.json({ message: "Hello from API!" });
 // });
 
+router.post("/", scoreActions.addNewScore)
 router.get("/scores", scoreActions.browseAllScores);
 
 export default router;

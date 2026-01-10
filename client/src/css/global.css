@@ -7,6 +7,7 @@
     font-size: var(--button-font-size);
     padding: 0.1em 0.3em;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
     transition: background-color 0.2s ease;
 }
 
@@ -27,4 +28,15 @@
     font-family: var(--text-font-family);
     font-size: var(--info-font-size);
     font-weight: var(--info-font-weight);
+}
+
+.extra-info-light{
+    font-weight: var(--info-font-weight-light);
+    color: black;
+}
+
+.placeholder{
+    font-family: var(--text-font-family);
+    font-size: var(--info-font-size);
+    font-weight: var(--info-font-weight-light);
 }

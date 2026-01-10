@@ -10,6 +10,7 @@ function Instructions({ startNewGame }: InstructionsProps) {
       <p className="general-text">
         Découvre le mot mystère lettre par lettre… il parle d'Emeric !
       </p>
+      <p>Trouvez-le avant qu'il ne soit enterré sous les cadeaux de Noël.</p>
       <button type="button" className="button" onClick={startNewGame}>
         C'est parti
       </button>
