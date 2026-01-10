@@ -44,8 +44,8 @@
 @media (max-width: 768px){
   .keyboard{
     gap: 0.3rem;
-
   }
+  
   .letter-key{
     width: 3rem;
   }

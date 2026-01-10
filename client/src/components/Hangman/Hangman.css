@@ -1,5 +1,4 @@
 .img-container{
-    /* border: 2px solid orange; */
     position: relative;
     height: 100%;
     width: 450px;       
@@ -14,11 +13,9 @@
   width: auto;
   height: 100%;
   display: block;
-
 }
 
 .gifts-container {
-  /* border: 2px solid orange; */
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -39,15 +36,7 @@
 @media (max-width: 768px){
 
   .img-container{
-      width: 350px;       
-  }
-
-}
-
-@media (max-width: 480px){
-
-  .img-container{
-      width: 300px;       
+      width: 250px;       
   }
 
 }

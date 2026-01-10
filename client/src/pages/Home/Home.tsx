@@ -113,9 +113,9 @@ function Home() {
         <div className="game">
           {gameLaunched ? (
             <>
-              <div>
-                <div className="extra-info">Tour {round}</div>
-                <div>{`${minutes}:${seconds}`}</div>
+              <div className="stats-container">
+                <p className="extra-info">Tour {round}</p>
+                <p className="extra-info">{`${minutes}:${seconds}`}</p>
               </div>
               <Word
                 reveal={isLoser}

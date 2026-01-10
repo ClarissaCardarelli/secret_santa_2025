@@ -5,7 +5,7 @@
 }
 
 .nav ul{
-    max-width: 1200px;
+    max-width: 90%;
     margin: 0 auto;
     height: 100%;
     list-style: none;
@@ -42,4 +42,13 @@
     max-height: 100%;
     width: auto;
     padding: 5px;
+}
+
+
+@media (max-width: 480px){
+.nav{
+    height: 50px;
+    background-color: white;
+    width: 100%;
+}
 }

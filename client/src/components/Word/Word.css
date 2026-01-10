@@ -5,7 +5,6 @@
     padding: 0 0.5rem;
     font-size: var(--word-font-size);
     font-weight: var(--word-font-weight);
-    /* border: 2px solid red; */
 }
 
 .underline{
@@ -25,3 +24,17 @@
     visibility: hidden;
 }
 
+@media (max-width: 480px){
+
+.underline{
+    width: 1.5ch;      
+}
+
+}
+
+@media (max-width: 320px){
+
+.underline{
+    width: 1ch;      
+}
+}

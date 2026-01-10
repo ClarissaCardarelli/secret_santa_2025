@@ -21,7 +21,6 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-
 }
 
 .scoreInfo{
@@ -36,12 +35,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
-
 }
 
 .modal-button-new-game{
     background-color: white;
     color: var(--red);
     border: 2px solid;
+}
+
+@media (max-width: 480px) {
+
+.modal-content{
+    padding: 2rem 1rem;
+}
+
 }

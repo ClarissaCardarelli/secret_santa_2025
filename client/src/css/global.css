@@ -31,12 +31,23 @@
 }
 
 .extra-info-light{
+    color: var(--dark-green);
+    font-family: var(--text-font-family);
+    font-size: var(--info-font-size);
     font-weight: var(--info-font-weight-light);
     color: black;
+    max-width: 40ch;
+    text-align: center;
 }
 
 .placeholder{
     font-family: var(--text-font-family);
     font-size: var(--info-font-size);
     font-weight: var(--info-font-weight-light);
+}
+
+@media (max-width: 480px){
+    .button{
+    width: 90%;
+    }
 }

@@ -26,7 +26,7 @@ function ScoreModal({ round, minutes, seconds, setModalOpen, startNewGame }) {
 
         <div className="modal-button-container">
           <button className="button" onClick={() => {}}>
-            Envoyer mon score
+            Envoyer score
           </button>
 
           <button
