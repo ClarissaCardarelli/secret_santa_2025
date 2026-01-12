@@ -11,7 +11,7 @@ function Instructions({ startNewGame }: InstructionsProps) {
         Découvre le mot mystère lettre par lettre… il parle d'Emeric !
       </p>
       <p className="extra-info-light">
-        Trouvez-le avant qu'Emeric ne soit enterré sous les cadeaux de Noël.
+        Trouve-le avant qu'Emeric ne soit enterré sous les cadeaux de Noël.
       </p>
       <button type="button" className="button" onClick={startNewGame}>
         C'est parti
