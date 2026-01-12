@@ -1,3 +1,7 @@
-import app from "../server/app.js";
+// api/index.ts
+// @ts-ignore
+import app from "../dist/server/app.js";
 
-export default app;
+export default function handler(req: any, res: any) {
+  app(req, res);
+}

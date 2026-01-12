@@ -12,3 +12,6 @@ client/.env
 
 # Optional OS files
 .DS_Store
+
+# build output
+dist/

@@ -1,0 +1,22 @@
+{
+  "name": "mot-mystere",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "cd client && npm install && npm run build",
+    "build:server": "cd server && npm install && npx tsc",
+    "dev": "concurrently \"cd client && npm run dev\" \"cd server && tsx watch index.ts\""
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "cors": "^2.8.5",
+    "@neondatabase/serverless": "^1.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "tsx": "^4.21.0",
+    "concurrently": "^8.2.0"
+  }
+}
