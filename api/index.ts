@@ -1,11 +1,8 @@
+// api/index.ts
 import serverless from "serverless-http";
-import app from "../server/dist/app.js";
+// @ts-ignore
+import app from "../server/dist/app.js";  // adjust path if your dist is inside server/
 
-console.log("api/index.ts loaded!");  // confirms Vercel is loading this file
+console.log("api/index.ts loaded!");  // debug log
 
-const handler = serverless(app);
-
-export default function debugHandler(req: any, res: any) {
-  console.log("Incoming request:", req.method, req.url);  // logs every request
-  return handler(req, res);
-}
+export default serverless(app);
