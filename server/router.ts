@@ -1,5 +1,5 @@
 import express from "express";
-import scoreActions from "./modules/Scores/scoreActions";
+import scoreActions from "./modules/Scores/scoreActions.js";
 
 const router = express.Router();
 
