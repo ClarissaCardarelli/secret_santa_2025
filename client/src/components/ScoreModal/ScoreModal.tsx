@@ -24,7 +24,7 @@ function ScoreModal({ round, minutes, seconds, setModalOpen, startNewGame }) {
             name="username"
             placeholder="Santa Claus"
             autoFocus
-            maxLength={20}
+            maxLength={15}
             className="placeholder"
             required
             value={username}

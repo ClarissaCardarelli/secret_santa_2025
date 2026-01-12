@@ -44,8 +44,8 @@ const addNewScore: RequestHandler = async (req, res) => {
       errors.push({ message: "All fields are required" });
     }
 
-    if (typeof username === "string" && username.length > 20) {
-      errors.push({ message: "Name should contain less than 20 characters" });
+    if (typeof username === "string" && username.length > 10) {
+      errors.push({ message: "Name should contain less than 10 characters" });
     }
 
     if (errors.length > 0) {
