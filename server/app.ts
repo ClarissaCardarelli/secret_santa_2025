@@ -9,6 +9,6 @@ app.use(cors({ origin: clientUrl }));
 
 app.use(express.json());
 
-app.use("/api", router);
+app.use("/", router);
 
 export default app
