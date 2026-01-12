@@ -1,22 +1,22 @@
 {
   "compilerOptions": {
-    "target": "ES2020",                 
-    "module": "ESNext",                    
-    "moduleResolution": "Node", 
-    "esModuleInterop": true,            
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-    "outDir": "dist",                  
+    "outDir": "server/dist",    
     "resolveJsonModule": true,
     "sourceMap": true
   },
   "include": [
-    "server/**/*.ts",                     
-    "api/**/*.ts"                     
+    "server/**/*.ts"            
   ],
   "exclude": [
     "node_modules",
-    "client"                         
+    "client",
+    "api"
   ]
 }
