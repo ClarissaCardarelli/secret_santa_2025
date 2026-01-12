@@ -2,18 +2,28 @@ import { useState } from "react";
 import "./ScoreModal.css";
 import { useNavigate } from "react-router-dom";
 
-function ScoreModal({ round, minutes, seconds, setModalOpen, startNewGame }) {
+interface ScoreModalProps {
+  round: number;
+  minutes: string;
+  seconds: string;
+  setModalOpen: (arg0: boolean) => void;
+  startNewGame: () => void;
+}
+
+function ScoreModal({
+  round,
+  minutes,
+  seconds,
+  setModalOpen,
+  startNewGame,
+}: ScoreModalProps) {
   const navigate = useNavigate();
   const correctedRound = round === 21 ? round - 1 : round;
   const [username, setUsername] = useState("");
 
-  const handleUsernameChange = (event) => {
+  const handleUsernameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setUsername(event.target.value);
   };
-
-  // console.log("new score obj" + newScore.username);
-  // console.log("new score obj" + newScore.time);
-  // console.log("new score obj" + newScore.round);
 
   return (
     <div className="modal-overlay">

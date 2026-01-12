@@ -76,9 +76,6 @@ function Home() {
       stopStopWatch();
       setModalOpen(true);
     }
-
-    console.log("current word to guess" + wordToGuess);
-    console.log("usedWords" + usedWords);
   }, [isLoser, usedWords, wordToGuess]);
 
   const startNewRound = () => {
