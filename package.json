@@ -4,21 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "npm run build:server && npm run build:client",
-    "build:server": "cd server && npm install && npx -p typescript tsc",
-    "build:client": "cd client && npm install && npm run build",
-    "dev": "concurrently \"cd client && npm run dev\" \"cd server && tsx watch index.ts\"",
-    "install-all": "cd server && npm install && cd ../client && npm install"
+    "build": "cd client && npm install && npm run build"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
     "cors": "^2.8.5",
     "express": "^5.2.1",
     "serverless-http": "^4.0.0"
-  },
-  "devDependencies": {
-    "concurrently": "^8.2.0",
-    "tsx": "^4.21.0",
-    "typescript": "^5.2.2"
   }
 }
