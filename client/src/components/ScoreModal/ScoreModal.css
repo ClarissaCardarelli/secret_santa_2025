@@ -47,6 +47,11 @@
     width: 70%;
 }
 
+.letterCounter{
+    text-align: end;
+    font-size: 0.75rem;
+}
+
 @media (max-width: 480px) {
 
 .modal-content{

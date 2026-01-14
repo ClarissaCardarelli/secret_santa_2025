@@ -10,6 +10,8 @@ interface ScoreModalProps {
   startNewGame: () => void;
 }
 
+const invalidCharacters = /[+\-*/.,:;?!_]/;
+
 function ScoreModal({
   round,
   minutes,
@@ -22,25 +24,34 @@ function ScoreModal({
   const [username, setUsername] = useState("");
 
   const handleUsernameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setUsername(event.target.value);
+    if (
+      !invalidCharacters.test(event.target.value) &&
+      event.target.value.length < 16
+    ) {
+      setUsername(event.target.value);
+    }
   };
 
   return (
     <div className="modal-overlay">
       <div className="modal-content">
         <div className="scoreInfo">
-          <input
-            type="text"
-            name="username"
-            placeholder="Santa Claus"
-            autoFocus
-            maxLength={15}
-            className="placeholder"
-            required
-            value={username}
-            onChange={handleUsernameChange}
-          />
-
+          <div>
+            <input
+              type="text"
+              name="username"
+              placeholder="Santa Claus"
+              autoFocus
+              maxLength={15}
+              className="placeholder"
+              required
+              value={username}
+              onChange={handleUsernameChange}
+            />
+            <p className="extra-info-light letterCounter">
+              {username.length} / 15
+            </p>
+          </div>
           <p className="extra-info">
             Durée:{" "}
             <span className="extra-info-light">{`${minutes}:${seconds}`}</span>
